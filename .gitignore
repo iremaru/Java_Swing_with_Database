@@ -1,0 +1,5 @@
+# builds and outs
+out
+
+# IDE related
+.idea

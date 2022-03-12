@@ -12,11 +12,13 @@ public class ViewPanelEntrada extends JFrame {
     private JTable table1;
     private JButton asignaturasButton;
     private JButton personasButton;
+    private JPanel aside;
+    private JPanel dataTable;
 
 
     public ViewPanelEntrada() {
 
-        super("La Ventana es de Prueba");
+        super("University app");
         setContentPane(panelEntrada);
         int ancho = java.awt.Toolkit.getDefaultToolkit().getScreenSize().width;
         int alto = java.awt.Toolkit.getDefaultToolkit().getScreenSize().height;
@@ -94,5 +96,9 @@ public class ViewPanelEntrada extends JFrame {
 
     public void setPersonasButton(JButton personasButton) {
         this.personasButton = personasButton;
+    }
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
     }
 }

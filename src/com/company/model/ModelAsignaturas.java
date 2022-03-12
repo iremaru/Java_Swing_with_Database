@@ -1,6 +1,6 @@
-package model.com.company;
+package com.company.model;
 
-import Connecion.ConectionBD;
+import com.company.connection.ConectionBD;
 
 import javax.swing.table.DefaultTableModel;
 import java.sql.ResultSet;

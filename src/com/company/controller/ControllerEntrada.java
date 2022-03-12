@@ -1,9 +1,10 @@
-package Controler.com.company;
+package com.company.controller;
 
-import Connecion.ConectionBD;
-import model.com.company.ModelAsignaturas;
-import model.com.company.ModelPersonas;
-import view.com.company.*;
+import com.company.connection.ConectionBD;
+import com.company.model.ModelAsignaturas;
+import com.company.model.ModelPersonas;
+import com.company.view.DialogoEntrada;
+import com.company.view.ViewPanelEntrada;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;

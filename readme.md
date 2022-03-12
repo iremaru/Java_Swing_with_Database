@@ -33,7 +33,7 @@ View without the database linked:
 View after the database was settled up:
 ![Main window](dev/img/v0_state_MainWindowWithData.png)
 
-### Tareas
+### TODOs
 
 - ⬜ _Persona_ CRUD
   - ⬜ Get data from _Persona_ table

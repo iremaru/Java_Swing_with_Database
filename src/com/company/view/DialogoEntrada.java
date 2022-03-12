@@ -1,4 +1,4 @@
-package view.com.company;
+package com.company.view;
 
 import javax.swing.*;
 import java.awt.event.*;

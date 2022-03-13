@@ -27,11 +27,11 @@ public class ControllerEntrada implements ActionListener, MouseListener, WindowL
     }
 
     public void iniciarEventos() {
-        frEntrada.getBoton1Button().addActionListener(this::actionPerformed);
-        frEntrada.getBoton2Button().addActionListener(this::actionPerformed);
-        frEntrada.getDialog().addActionListener(this::actionPerformed);
-        frEntrada.getAsignaturasButton().addActionListener(this::actionPerformed);
-        frEntrada.getPersonasButton().addActionListener(this::actionPerformed);
+        frEntrada.getBoton1Button().addActionListener(this);
+        frEntrada.getBoton2Button().addActionListener(this);
+        frEntrada.getDialog().addActionListener(this);
+        frEntrada.getAsignaturasButton().addActionListener(this);
+        frEntrada.getPersonasButton().addActionListener(this);
         frEntrada.getPanelEntrada().addMouseListener(this);
         frEntrada.getTable1().addMouseListener(this);
         frEntrada.addWindowListener(this);

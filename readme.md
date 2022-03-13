@@ -22,11 +22,11 @@
 
 |Initial appearance | Current appearance |
 |----|----|
-|![Main window](dev/img/v0_state_MainWindowWithData.png) | ![curren appeal](img_2.png) |
+|![Main window](dev/img/v0_state_MainWindowWithData.png) | ![curren appeal](dev/img/v0-1_state_MainWindowCRUD.png) |
 
 |Initial architecture | Desired architecture |
 |----|----|
-|![Current architecture](img.png)| ![Desired architecture](img_1.png) |
+|![Current architecture](dev/img/Architecture_Initial.png)| ![Desired architecture](dev/img/Architecture_target.png) |
 
 ### 📋TODOs
 

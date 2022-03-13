@@ -20,11 +20,13 @@
 
 ### 🔎State of the work
 
-View without the database linked:
-![Main window](dev/img/v0_state_mainWindow.png)
+|Initial appearance | Current appearance |
+|----|----|
+|![Main window](dev/img/v0_state_MainWindowWithData.png) | ![curren appeal](img_2.png) |
 
-View after the database was settled up:
-![Main window](dev/img/v0_state_MainWindowWithData.png)
+|Initial architecture | Desired architecture |
+|----|----|
+|![Current architecture](img.png)| ![Desired architecture](img_1.png) |
 
 ### 📋TODOs
 

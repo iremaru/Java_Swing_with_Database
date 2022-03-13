@@ -11,9 +11,9 @@ public class ModelAsignaturas {
 
     private Statement stmt;
 
-    public DefaultTableModel CargaDatos(DefaultTableModel m) {
+    public DefaultTableModel CargaDatos(/*DefaultTableModel m*/) {
         String[] titulos = {"ID", "Nombre", "Créditos", "Tipo", "Curso", "Cuatrimestre", "Id Profesor", "Id Grado"};
-        m = new DefaultTableModel(null, titulos);
+        DefaultTableModel m = new DefaultTableModel(null, titulos);
 
         try {
             stmt = ConectionBD.getStmt();
@@ -36,4 +36,6 @@ public class ModelAsignaturas {
         }
         return m;
     }
+
+
 }

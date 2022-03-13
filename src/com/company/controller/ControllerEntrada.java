@@ -2,20 +2,18 @@ package com.company.controller;
 
 import com.company.connection.ConectionBD;
 import com.company.model.ModelAsignaturas;
-import com.company.model.ModelPersonas;
+import com.company.model.PersonaSaver;
 import com.company.view.DialogoEntrada;
 import com.company.view.ViewPanelEntrada;
 
 import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
 import java.awt.event.*;
 
 public class ControllerEntrada implements ActionListener, MouseListener, WindowListener, KeyListener {
 
     private final ViewPanelEntrada frEntrada = new ViewPanelEntrada();
-    private final DefaultTableModel m = null;
+    /*private final DefaultTableModel m = null;*/
 
-    // Constructor lanza cada uno de los procedimientos de la aplicación
     public ControllerEntrada() {
         iniciarVentana();
         iniciarEventos();
@@ -40,8 +38,8 @@ public class ControllerEntrada implements ActionListener, MouseListener, WindowL
     }
 
     public void prepararBaseDatos() {
-        ModelPersonas entrada = new ModelPersonas();
-        frEntrada.getTable1().setModel(entrada.CargaDatos(m));
+        PersonaSaver entrada = new PersonaSaver();
+        frEntrada.getTable1().setModel(entrada.CargaDatos(/*m*/));
     }
 
     @Override
@@ -59,7 +57,7 @@ public class ControllerEntrada implements ActionListener, MouseListener, WindowL
                 frEntrada.getTextField2().setText("Escribe otro");
                 break;
 
-            case "Diálogo":
+            case "Dialog":
                 DialogoEntrada miDialogo = new DialogoEntrada();
                 miDialogo.setSize(400, 200);
                 miDialogo.setLocation(400, 300);
@@ -78,12 +76,12 @@ public class ControllerEntrada implements ActionListener, MouseListener, WindowL
 
             case "Asignaturas":
                 ModelAsignaturas asignatura = new ModelAsignaturas();
-                frEntrada.getTable1().setModel(asignatura.CargaDatos(m));
+                frEntrada.getTable1().setModel(asignatura.CargaDatos(/*m*/));
                 break;
 
             case "Personas":
-                ModelPersonas persona = new ModelPersonas();
-                frEntrada.getTable1().setModel(persona.CargaDatos(m));
+                PersonaSaver persona = new PersonaSaver();
+                frEntrada.getTable1().setModel(persona.CargaDatos(/*m*/));
                 break;
         }
     }

@@ -17,8 +17,11 @@ public class ConectionBD {
     private static ResultSet rs;
 
 
-    //Abrir la conexión de la BBDD
-    public static void openConn() {
+    /***
+     *
+     * @return True if connection was settled up correctly.
+     */
+    public static boolean openConn() {
 
         // Primero se comprueba que carga el controlador (Si está la librería necesaria)
         try {
@@ -31,7 +34,7 @@ public class ConectionBD {
         try {
             String sUrl = url + ":" + port + "/" + db + "?zeroDateTimeBehavior=convertToNull";
             conn = DriverManager.getConnection(sUrl, user, passwd);
-            System.out.println(sUrl);
+            //System.out.println(sUrl); //<- Delete TODO
 
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error en la conexión");
@@ -42,7 +45,7 @@ public class ConectionBD {
             stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
         } catch (SQLException ex) {
         }
-
+        return conn != null;
     }
 
     public static Connection getConn() {
@@ -52,7 +55,8 @@ public class ConectionBD {
     //Cuando se cierre la aplicación hay que cerrar la conexión a la BBDD
     public static void closeConn() {
         try {
-            JOptionPane.showMessageDialog(null, "Se cerró la conexión con la BBDD");
+            //TODO: Delete Line
+            //JOptionPane.showMessageDialog(null, "Se cerró la conexión con la BBDD");
             conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(Connection.class.getName()).log(Level.SEVERE, null, ex);

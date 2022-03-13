@@ -1,6 +1,8 @@
 package com.company.view;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class ViewPanelEntrada extends JFrame {
     private JTextField textField1;
@@ -24,6 +26,12 @@ public class ViewPanelEntrada extends JFrame {
         int alto = java.awt.Toolkit.getDefaultToolkit().getScreenSize().height;
         setSize(ancho, alto);
 
+        dialog.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //TODO: Trigger login dialog
+            }
+        });
     }
 
     public JTextField getTextField1() {
@@ -98,7 +106,4 @@ public class ViewPanelEntrada extends JFrame {
         this.personasButton = personasButton;
     }
 
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
-    }
 }
